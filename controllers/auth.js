@@ -16,7 +16,7 @@ exports.signup = (req, res) => {
     user.salt = undefined;
     user.hashed_password = undefined;
     res.json({
-      user,
+      user
     });
   });
 };
@@ -44,7 +44,7 @@ exports.signin = (req, res) => {
     //persist the token as 't' in cookie with expiry date
     res.cookie("t", token, { expire: new Date() + 9999 });
 
-    //return response with user and token to frontened client
+    //return response with user and token to frontend client
     const { _id, name, email, role } = user;
 
     return res.json({
@@ -65,7 +65,7 @@ exports.signout = (req, res) => {
 };
 
 exports.requireSignin = expressJwt({
-  secret: process.env.JWT_SECRET,
+  secret: "ajfghjk2hoijaksfh",
   userProperty: "auth",
 });
 

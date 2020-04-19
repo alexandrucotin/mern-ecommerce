@@ -7,35 +7,39 @@ const productSchema = new mongoose.Schema(
       type: String,
       trim: true,
       required: true,
-      maxlength: 32
+      maxlength: 32,
     },
     description: {
       type: String,
       required: true,
-      maxlength: 2000
+      maxlength: 2000,
     },
     price: {
       type: Number,
-      required: true,
       trim: true,
-      maxlength: 32
+      required: true,
+      maxlength: 32,
     },
     category: {
       type: ObjectId,
-      ref: 'Category',
-      required: true
+      ref: "Category",
+      required: true,
     },
     quantity: {
-      type: Number
+      type: Number,
     },
-    photo:{
-        data: Buffer,
-        contentType: String
+    sold: {
+      type: Number,
+      default: 0,
     },
-    shipping:{
-        required: false,
-        tyoe: Boolean
-    }
+    photo: {
+      data: Buffer,
+      contentType: String,
+    },
+    shipping: {
+      required: false,
+      type: Boolean,
+    },
   },
   { timestamps: true }
 );

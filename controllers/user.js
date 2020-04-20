@@ -8,7 +8,6 @@ exports.userById = (req, res, next, id) => {
             })
         }
         req.profile = user
-        req.body = user
         next();
     })
 }

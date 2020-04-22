@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 
-const Dashboard = () => {
+const AdminDashboard = () => {
   const {
     user: { name, email, role },
   } = isAuthenticated();
 
-  const userLinks = () => {
+  const adminLinks = () => {
     return (
       <div className="card">
-        <h4>User Links</h4>
+        <h4>Admin Links</h4>
         <ul className="list-group">
           <li className="list-group-item">
-            <Link className="dashboard-link" to="/cart">
-              my cart
+            <Link className="dashboard-link" to="/create/category">
+              create category
             </Link>
           </li>
           <li className="list-group-item">
-            <Link className="dashboard-link" to="/profile/update">
-              update profile
+            <Link className="dashboard-link" to="/create/product">
+              create product
             </Link>
           </li>
         </ul>
@@ -28,10 +28,10 @@ const Dashboard = () => {
     );
   };
 
-  const userInformation = () => {
+  const adminInformation = () => {
     return (
       <div className="card">
-        <h3 className="card-title">user info</h3>
+        <h3 className="card-title">admin info</h3>
         <ul className="list-group">
           <li className="list-group-item">{name}</li>
           <li className="list-group-item">{email}</li>
@@ -43,26 +43,15 @@ const Dashboard = () => {
     );
   };
 
-  const purchasedHistory = () => {
-    return (
-      <div className="card">
-        <h3 className="card-title">purchase history</h3>
-        <ul className="list-group">
-          <li className="list-group-item">history</li>
-        </ul>
-      </div>
-    );
-  };
 
   return (
-    <Layout title="Dashboard" description="User Dashboard" className="">
+    <Layout title="Dashboard" description="Admin Dashboard" className="">
       <div>
-      {userInformation ()}
-      {purchasedHistory ()}
-      {userLinks ()}
+      {adminInformation()}
+      {adminLinks()}
       </div>
     </Layout>
   );
 };
 
-export default Dashboard;
+export default AdminDashboard;

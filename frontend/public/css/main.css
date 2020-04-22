@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: zeitung, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* ================= */
+.header {
+  padding: 4rem;
+  background-color: lightcyan;
+}
+
+.header .title {
+  font-size: 2.5rem;
+}
+
+.section {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+}
+
+.navbar .navbar-item {
+  padding: 1rem;
+}
+
+.navbar .navbar-item .navbar-link {
+  color: white;
+}
+
+.navbar .navbar-item .active {
+  font-weight: bold;
+}
+
+/* === END STYLE ===*/
+/* === Sign up page ===*/
+form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-group {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form .form-group label {
+  padding: 2rem 0 0.3rem 0;
+}
+
+form .form-group .text-muted {
+  font-size: 0.7rem;
+  color: #949494;
+}
+
+form .form-group .form-control {
+  border: 0;
+  font-size: 1rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+form .button {
+  border: 0;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  width: auto;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.alert-danger {
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: rgba(255, 89, 89, 0.514);
+  color: #632121;
+}
+
+.alert-info {
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: rgba(89, 255, 97, 0.514);
+  color: green;
+}
+/*# sourceMappingURL=main.css.map */

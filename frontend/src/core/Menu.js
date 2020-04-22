@@ -16,6 +16,16 @@ const Menu = ({ history }) => (
           home
         </Link>
       </li>
+      
+      <li className="navbar-item">
+        <Link
+          className="navbar-link"
+          style={isActive(history, "/dashboard")}
+          to="/dashboard"
+        >
+          dashboard
+        </Link>
+      </li>
 
       {!isAuthenticated() && (
         <Fragment>
@@ -42,19 +52,19 @@ const Menu = ({ history }) => (
       )}
 
       {isAuthenticated() && (
-          <li className="navbar-item">
-            <span
-              className="navbar-link"
-              style={{ cursor: "pointer", color: "#ffffff" }}
-              onClick={() =>
-                signout(() => {
-                  history.push("/");
-                })
-              }
-            >
-              logout
-            </span>
-          </li>
+        <li className="navbar-item">
+          <span
+            className="navbar-link"
+            style={{ cursor: "pointer", color: "#ffffff" }}
+            onClick={() =>
+              signout(() => {
+                history.push("/");
+              })
+            }
+          >
+            logout
+          </span>
+        </li>
       )}
     </ul>
   </div>

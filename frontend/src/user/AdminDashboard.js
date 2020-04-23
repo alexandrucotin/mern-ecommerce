@@ -11,7 +11,7 @@ const AdminDashboard = () => {
   const adminLinks = () => {
     return (
       <div className="admin-create">
-        <p class="admin-header">create...</p>
+        <p className="admin-header">create...</p>
         <ul className="list-group">
           <li className="list-group-item">
             <Link className="dashboard-link" to="/create/category">
@@ -51,9 +51,9 @@ const AdminDashboard = () => {
     <Layout
       title="Dashboard"
       description="This is the admin dashboard where you can create a new category or a new product that will be added to the category or product page!"
-      className=""
+      className="section"
     >
-      <div class="container">
+      <div className="container-admin-dashboard">
         {adminLinks()}
         {adminInformation()}
       </div>

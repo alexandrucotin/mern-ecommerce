@@ -34,43 +34,36 @@ h2 {
 }
 
 .header .title {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .section {
   padding: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container {
   background-color: #fcc9c9;
-  padding: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .alert-danger {
+  text-align: center;
   border-radius: 0.5rem;
   padding: 1rem 3rem;
   background-color: rgba(255, 89, 89, 0.514);
   color: #632121;
 }
 
+.alert-danger span {
+  font-weight: bold;
+}
+
 .alert-info {
+  text-align: center;
   border-radius: 0.5rem;
   padding: 1rem 3rem;
   background-color: rgba(89, 255, 97, 0.514);
   color: green;
+}
+
+.alert-info span {
+  font-weight: bold;
 }
 
 /* ================= */
@@ -95,7 +88,7 @@ h2 {
 }
 
 /* ================= */
-/* === Sign up page ===*/
+/* === SIGNUP PAGE ===*/
 form {
   width: 100%;
   display: -webkit-box;
@@ -150,22 +143,27 @@ form .button {
 }
 
 /* ================= */
-/* === Admin Dashboard ===*/
-.admin-create {
+/* === ADMIN DASHBOARD ===*/
+.container-admin-dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-admin-dashboard .admin-create {
   width: 50%;
 }
 
-.admin-create .admin-header {
+.container-admin-dashboard .admin-create .admin-header {
   font-weight: bold;
-  width: 50%;
   font-size: 2rem;
 }
 
-.admin-create .list-group {
+.container-admin-dashboard .admin-create .list-group {
   width: 30%;
 }
 
-.admin-create .list-group .list-group-item {
+.container-admin-dashboard .admin-create .list-group .list-group-item {
   text-align: center;
   background-color: lightcyan;
   border-radius: 0.5rem;
@@ -174,26 +172,87 @@ form .button {
   margin: 0.5rem 0;
 }
 
-.admin-info {
+.container-admin-dashboard .admin-info {
   width: 50%;
 }
 
-.admin-info .admin-header {
+.container-admin-dashboard .admin-info .admin-header {
   font-weight: bold;
-  width: 50%;
   font-size: 2rem;
 }
 
-.admin-info .list-group {
-  width: 50%;
-}
-
-.admin-info .list-group .list-group-item {
+.container-admin-dashboard .admin-info .list-group .list-group-item {
   font-size: 0.8rem;
   margin: 0.5rem 0;
 }
 
-.admin-info .list-group .list-group-item span {
+.container-admin-dashboard .admin-info .list-group .list-group-item span {
   font-weight: bold;
 }
+
+/* ================= */
+/* === USER DASHBOARD ===*/
+.container-user-dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-user-dashboard .user-links {
+  width: 50%;
+}
+
+.container-user-dashboard .user-links .user-header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.container-user-dashboard .user-links .list-group .list-group-item {
+  font-size: 0.8rem;
+  padding: 0.3rem;
+}
+
+.container-user-dashboard .user-links .list-group .list-group-item span {
+  font-weight: bold;
+}
+
+.container-user-dashboard .user-info {
+  width: 50%;
+}
+
+.container-user-dashboard .user-info .user-header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.container-user-dashboard .user-info .list-group .list-group-item {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.container-user-dashboard .user-info .list-group .list-group-item span {
+  font-weight: bold;
+}
+
+.purchasedHistory .history-header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* ================= */
+/* === CREATE CATEGORY ===*/
+.container-create-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ================= */
 /*# sourceMappingURL=main.css.map */

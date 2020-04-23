@@ -92,8 +92,8 @@ const Signin = () => {
   };
   return (
     <Layout
-      title="Signup Page"
-      description="Signup to the E-commerce page!"
+      title="Sign in Page"
+      description="Sign in to the E-commerce page!"
       className="section"
     >
       {showLoading()}

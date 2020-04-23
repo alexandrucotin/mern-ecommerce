@@ -10,17 +10,17 @@ const AdminDashboard = () => {
 
   const adminLinks = () => {
     return (
-      <div className="card">
-        <h4>Admin Links</h4>
+      <div className="admin-create">
+        <p class="admin-header">create...</p>
         <ul className="list-group">
           <li className="list-group-item">
             <Link className="dashboard-link" to="/create/category">
-              create category
+              category
             </Link>
           </li>
           <li className="list-group-item">
             <Link className="dashboard-link" to="/create/product">
-              create product
+              product
             </Link>
           </li>
         </ul>
@@ -30,25 +30,32 @@ const AdminDashboard = () => {
 
   const adminInformation = () => {
     return (
-      <div className="card">
-        <h3 className="card-title">admin info</h3>
+      <div className="admin-info">
+        <p className="admin-header">informations</p>
         <ul className="list-group">
-          <li className="list-group-item">{name}</li>
-          <li className="list-group-item">{email}</li>
           <li className="list-group-item">
-            {role === 1 ? "Admin" : "Registered User"}
+            <span>name:</span> {name}
+          </li>
+          <li className="list-group-item">
+            <span>email:</span> {email}
+          </li>
+          <li className="list-group-item">
+            <span>role:</span> {role === 1 ? "Admin" : "Registered User"}
           </li>
         </ul>
       </div>
     );
   };
 
-
   return (
-    <Layout title="Dashboard" description="Admin Dashboard" className="">
-      <div>
-      {adminInformation()}
-      {adminLinks()}
+    <Layout
+      title="Dashboard"
+      description="This is the admin dashboard where you can create a new category or a new product that will be added to the category or product page!"
+      className=""
+    >
+      <div class="container">
+        {adminLinks()}
+        {adminInformation()}
       </div>
     </Layout>
   );

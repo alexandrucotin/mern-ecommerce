@@ -27,6 +27,7 @@ h2 {
 }
 
 /* ================= */
+/* === GENERAL STYLING === */
 .header {
   padding: 4rem;
   background-color: lightcyan;
@@ -50,6 +51,29 @@ h2 {
           align-items: center;
 }
 
+.container {
+  background-color: #fcc9c9;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.alert-danger {
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: rgba(255, 89, 89, 0.514);
+  color: #632121;
+}
+
+.alert-info {
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: rgba(89, 255, 97, 0.514);
+  color: green;
+}
+
+/* ================= */
 /* === NAVBAR === */
 .navbar {
   display: -webkit-box;
@@ -70,7 +94,7 @@ h2 {
   font-weight: bold;
 }
 
-/* === END STYLE ===*/
+/* ================= */
 /* === Sign up page ===*/
 form {
   width: 100%;
@@ -125,17 +149,51 @@ form .button {
   color: white;
 }
 
-.alert-danger {
-  border-radius: 0.5rem;
-  padding: 1rem 3rem;
-  background-color: rgba(255, 89, 89, 0.514);
-  color: #632121;
+/* ================= */
+/* === Admin Dashboard ===*/
+.admin-create {
+  width: 50%;
 }
 
-.alert-info {
+.admin-create .admin-header {
+  font-weight: bold;
+  width: 50%;
+  font-size: 2rem;
+}
+
+.admin-create .list-group {
+  width: 30%;
+}
+
+.admin-create .list-group .list-group-item {
+  text-align: center;
+  background-color: lightcyan;
   border-radius: 0.5rem;
-  padding: 1rem 3rem;
-  background-color: rgba(89, 255, 97, 0.514);
-  color: green;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  margin: 0.5rem 0;
+}
+
+.admin-info {
+  width: 50%;
+}
+
+.admin-info .admin-header {
+  font-weight: bold;
+  width: 50%;
+  font-size: 2rem;
+}
+
+.admin-info .list-group {
+  width: 50%;
+}
+
+.admin-info .list-group .list-group-item {
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.admin-info .list-group .list-group-item span {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

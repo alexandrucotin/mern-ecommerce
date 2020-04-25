@@ -86,9 +86,9 @@ const AddProduct = () => {
 
   const newPostForm = () => (
     <form className="" onSubmit={clickSubmit}>
-      <p>Post Photo</p>
+      <div className="header-div"><p className="header-product">upload photo</p> </div>
       <div className="form-group">
-        <label className="">
+        <label className="first-label">
           <input
             onChange={handleChange("photo")}
             type="file"
@@ -99,7 +99,7 @@ const AddProduct = () => {
       </div>
 
       <div className="form-group">
-        <label className="">name</label>
+        <label >name</label>
         <textarea
           onChange={handleChange("name")}
           value={name}
@@ -140,7 +140,7 @@ const AddProduct = () => {
       </div>
 
       <div className="form-group">
-        <label className="">shippiong</label>
+        <label className="">shipping</label>
         <select onChange={handleChange("shipping")} className="text-muted">
           <option value="">please select</option>
           <option value="0">no</option>
@@ -167,7 +167,7 @@ const AddProduct = () => {
       description="In this page you can add a new product. You can access this page only if you are and admin and you are logged in!"
       className="section"
     >
-      <div className="container-create-category">{newPostForm()}</div>
+      <div className="container-create-product">{newPostForm()}</div>
     </Layout>
   );
 };

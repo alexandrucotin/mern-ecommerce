@@ -263,3 +263,30 @@ form {
 }
 
 /* ================= */
+
+
+/* === CREATE PRODUCT ===*/
+
+.container-create-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header-div{
+    width: 50%;
+
+    .header-product{
+      font-weight: bold;
+      margin-bottom: .8rem;
+      font-size: 1.5rem;
+    }
+  }
+
+
+
+  .first-label{
+    padding: 0;
+  }
+}
+
+/* ================= */

@@ -37,9 +37,42 @@ h2 {
   font-size: 4rem;
 }
 
+.header {
+  width: 30wh;
+  height: 30vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .section {
   padding: 4rem;
-  background-color: #fcc9c9;
 }
 
 .alert-danger {
@@ -54,7 +87,7 @@ h2 {
   font-weight: bold;
 }
 
-.alert-info {
+.alert-success {
   text-align: center;
   border-radius: 0.5rem;
   padding: 1rem 3rem;
@@ -62,8 +95,38 @@ h2 {
   color: green;
 }
 
+.alert-success span {
+  font-weight: bold;
+}
+
+.alert-info {
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: rgba(89, 255, 97, 0.514);
+  color: lightblue;
+}
+
 .alert-info span {
   font-weight: bold;
+}
+
+.button {
+  border: 0;
+  background-color: lightgrey;
+  padding: 0.5rem 1rem;
+  margin: 0 0.7rem 0 0;
+  width: auto;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.button-green {
+  background-color: rgba(89, 255, 97, 0.514);
+}
+
+.button-blue {
+  background-color: rgba(89, 216, 255, 0.514);
 }
 
 /* ================= */
@@ -130,16 +193,6 @@ form .form-group .form-control {
           box-shadow: none;
   text-decoration: none;
   border-bottom: 1px solid black;
-}
-
-form .button {
-  border: 0;
-  background-color: black;
-  padding: 0.5rem 1rem;
-  margin: 1.5rem 0;
-  width: auto;
-  border-radius: 0.5rem;
-  color: white;
 }
 
 /* ================= */
@@ -275,12 +328,91 @@ form .button {
 
 .container-create-product .header-div .header-product {
   font-weight: bold;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   font-size: 1.5rem;
 }
 
 .container-create-product .first-label {
   padding: 0;
+}
+
+/* ================= */
+/* === HOME PRODUCT SECTIONS ===*/
+.home-section {
+  padding-bottom: 4rem;
+}
+
+.home-section .home-header {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+/* ================= */
+/* === PRODUCT CARD ===*/
+.card {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+}
+
+.card .product-image {
+  height: 15rem;
+  width: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-body {
+  padding-left: 2rem;
+  color: #535353;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card .card-body .card-header {
+  font-weight: 500;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.card .card-body .card-inside-body {
+  margin: 1rem 0;
+}
+
+.card .card-body .card-inside-body p {
+  margin: 0;
+}
+
+.card .card-body .card-inside-body .card-price {
+  color: orange;
+}
+
+/* ================= */
+/* === CARDS IN HOMEPAGE ===*/
+.container-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /* ================= */

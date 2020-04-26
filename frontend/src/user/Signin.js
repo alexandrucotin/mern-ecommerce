@@ -64,7 +64,7 @@ const Signin = () => {
 
   const showError = () => (
     <div
-      className="alert alert-danger"
+      className="alert-danger"
       style={{ display: error ? "" : "none" }}
     >
       {error}

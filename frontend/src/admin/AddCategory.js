@@ -36,7 +36,7 @@ const AddCategory = () => {
   const showSuccess = () => {
     if (success) {
       return (
-        <p className="alert-info">
+        <p className="alert-success">
           <span>{name}</span> category is created!
         </p>
       );

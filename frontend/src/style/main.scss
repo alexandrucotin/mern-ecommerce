@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: zeitung, sans-serif;
   font-size: 16px;
+  color: rgb(83, 83, 83);
 }
 
 a {
@@ -137,11 +138,11 @@ h2 {
   font-weight: bold;
 }
 
-.button-green{
+.button-green {
   background-color: rgba(89, 255, 97, 0.514);
 }
 
-.button-blue{
+.button-blue {
   background-color: rgba(89, 216, 255, 0.514);
 }
 /* ================= */
@@ -330,7 +331,6 @@ form {
 /* ================= */
 
 /* === CREATE PRODUCT ===*/
-
 .container-create-product {
   display: flex;
   flex-direction: column;
@@ -354,13 +354,17 @@ form {
 /* ================= */
 
 /* === HOME PRODUCT SECTIONS ===*/
+.container-home {
+  display: flex;
 
-.home-section {
-  padding-bottom: 4rem;
+  .home-section {
+    padding-bottom: 4rem;
+    width: 50%;
 
-  .home-header {
-    font-size: 3rem;
-    padding-bottom: 1rem;
+    .home-header {
+      font-size: 3rem;
+      padding-bottom: 1rem;
+    }
   }
 }
 
@@ -422,18 +426,71 @@ form {
 
 /* ================= */
 
-/* === CARDS IN HOMEPAGE ===*/
+/* === SHOP PAGE ===*/
 
 .container-shop {
   width: 100%;
   display: flex;
 
-  .filter-section{
+  .filter-section {
     width: 20%;
+    border-right: 1px solid lightgrey;
+    margin-right: 2.5rem;
+
+    .filter-header {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: black;
+    }
   }
 
-  .products-section{
+  .products-section {
     width: 80%;
+  }
+}
+
+/* ================= */
+
+/* === CHECK COMPONENT ===*/
+
+.checkbox-list {
+  display: flex;
+  align-items: center;
+  .checkbox {
+    margin: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .checkbox-label{
+    margin-left: .5rem;
+    font-size: .9rem;
+  }
+}
+
+/* ================= */
+
+/* === SEARCH COMPONENT ===*/
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+  background-color: lightgrey;
+  
+  .select-component{
+    font-size: 1rem;
+    border: 0;
+  }
+
+  .form-search{
+    font-size: 1rem;
+    border: 0;
+    border-bottom: 1px solid lightgrey;
+  }
+
+  .button-search{
+
   }
 }
 

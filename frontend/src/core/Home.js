@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Layout from "./Layout";
 import { getProducts } from "./ApiCore";
 import Card from "./Card";
+import Search from './Search';
+
 
 const Home = () => {
   const [productsBySell, setProductsBySell] = useState([]);
@@ -35,6 +37,8 @@ const Home = () => {
 
   return (
     <Layout title="Home Page" description="E-commerce App" className="section">
+      <Search />
+      <div className='container-home'>
       <div className="home-section">
         <h2 className="home-header">new arrivals</h2>
         <div className="container-cards">
@@ -51,6 +55,7 @@ const Home = () => {
             <Card key={i} product={product} />
           ))}
         </div>
+      </div>
       </div>
     </Layout>
   );

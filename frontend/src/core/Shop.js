@@ -99,7 +99,7 @@ const Shop = () => {
     >
       <div className="container-shop">
         <div className="filter-section">
-          <p>Filter by category</p>
+          <p className="filter-header">Filter by category</p>
           <ul>
             <CheckBox
               categories={categories}
@@ -107,7 +107,7 @@ const Shop = () => {
             />
           </ul>
 
-          <p>Filter by price</p>
+          <p className="filter-header"> Filter by price</p>
           <div>
             <Radiobox
               prices={prices}

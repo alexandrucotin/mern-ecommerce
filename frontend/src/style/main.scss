@@ -421,3 +421,20 @@ form {
 }
 
 /* ================= */
+
+/* === CARDS IN HOMEPAGE ===*/
+
+.container-shop {
+  width: 100%;
+  display: flex;
+
+  .filter-section{
+    width: 20%;
+  }
+
+  .products-section{
+    width: 80%;
+  }
+}
+
+/* ================= */
